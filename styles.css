@@ -271,6 +271,27 @@ details summary{
     }
 }
 
+@media (width < 580px) {
+    .menu {
+        display: flex;
+    }
+    .info{
+        align-items: start;
+        text-align: left;
+    }
+    .pp{
+        height: 200px;
+    }
+
+    .blob-1{
+        transform: translateX(-35%) !important;
+    }
+
+    header nav ul{
+        display: none;
+    }
+}
+
 .logo{
     width: 50px;
     height: 50px;
@@ -862,24 +883,4 @@ section{
     }
 }
 
-@media (width < 580px) {
-    .menu {
-        display: flex;
-    }
-    .info{
-        align-items: start;
-        text-align: left;
-        background-color: red;
-    }
-    .pp{
-        height: 200px;
-    }
 
-    .blob-1{
-        transform: translateX(-35%) !important;
-    }
-
-    header nav ul{
-        display: none;
-    }
-}
