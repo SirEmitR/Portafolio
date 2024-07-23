@@ -173,23 +173,6 @@ details summary{
 .bubble-blob{
     fill: var(--crystal);
 }
-@media (width < 580px) {
-    .menu {
-        display: flex;
-    }
-
-    .pp{
-        height: 200px;
-    }
-
-    .blob-1{
-        transform: translateX(-35%) !important;
-    }
-
-    header nav ul{
-        display: none;
-    }
-}
 
 
 @keyframes modalApearLeft {
@@ -301,6 +284,8 @@ details summary{
 
 
 footer{
+    position: relative;
+    z-index: 10;
     width: 100%;
     padding: 20px;
     background-color: var(--dark);
@@ -875,5 +860,26 @@ section{
                 }
             }
         }
+    }
+}
+
+@media (width < 580px) {
+    .menu {
+        display: flex;
+    }
+    .info{
+        align-items: start;
+        text-align: left;
+    }
+    .pp{
+        height: 200px;
+    }
+
+    .blob-1{
+        transform: translateX(-35%) !important;
+    }
+
+    header nav ul{
+        display: none;
     }
 }
