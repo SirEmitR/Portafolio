@@ -869,6 +869,7 @@ section{
     .info{
         align-items: start;
         text-align: left;
+        background-color: red;
     }
     .pp{
         height: 200px;
