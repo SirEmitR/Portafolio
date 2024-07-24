@@ -343,7 +343,6 @@ section{
 
     .content{
         text-align: left;
-        text-wrap: balance;
         width: 100%;
         max-width: 720px;
         padding: 20px;
