@@ -271,37 +271,12 @@ details summary{
     }
 }
 
-@media (width < 580px) {
-    .menu {
-        display: flex;
-    }
-    .info{
-        align-items: start;
-        text-align: left;
-    }
-    .pp{
-        height: 200px;
-    }
-
-    .blob-1{
-        transform: translateX(-35%) !important;
-    }
-
-    header nav ul{
-        display: none;
-    }
-}
-
 .logo{
     width: 50px;
     height: 50px;
     aspect-ratio: 1/1;
     background-color: var(--crystal);
 }
-
-
-
-
 
 
 footer{
@@ -495,6 +470,28 @@ section{
     h1{
         color: var(--ligth);
         font-size: 2em;
+    }
+}
+
+
+@media (width < 580px) {
+    .menu {
+        display: flex;
+    }
+    .info{
+        align-items: start;
+        text-align: left;
+    }
+    .pp{
+        height: 200px;
+    }
+
+    .blob-1{
+        transform: translateX(-35%) !important;
+    }
+
+    header nav ul{
+        display: none;
     }
 }
 
