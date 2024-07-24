@@ -411,6 +411,13 @@
                     </li>
                     <li>
                         <div>
+                            <img loading="lazy" src="./public/typescript.webp" alt="TypeScript logo" />
+                            <span>TypeScript</span>
+                        </div>
+                        <span class="small">+2 years</span>
+                    </li>
+                    <li>
+                        <div>
                             <img loading="lazy" src="./public/nextjs.svg" alt="Next.js logo" />
                             <span>Nextjs</span>
                         </div>
@@ -475,7 +482,7 @@
                     </li>
                     <li>
                         <div>
-                            <img loading="lazy" style="padding: 5px;background-color: var(--ligth);border-radius: 5px;" src="./public/sql.png" alt="SQL logo" />
+                            <img loading="lazy" style="padding: 5px;background-color: var(--ligth);border-radius: 5px;object-fit: cover;" src="./public/sql.png" alt="SQL logo" />
                             <span>SQL</span>
                         </div>
                         <span class="small">+5 years</span>
@@ -500,6 +507,13 @@
                             <span>Azure</span>
                         </div>
                         <span class="small">+2 years</span>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-brands fa-cloudflare cloudflare"></i>
+                            <span>Cloudflare</span>
+                        </div>
+                        <span class="small">+1 years</span>
                     </li>
                     <li>
                         <div>
@@ -540,32 +554,32 @@
         </section>
         <section id="contact">
             <div class="content">
-                <form>
+                <form id="contact-form">
                     <h2>Get in touch</h2>
                     <p>Feel free to contact me for any project or collaboration.</p>
                     <div class="whats-contact">
                         <p class="small">Send me a message on WhatsApp</p>
-                        <a href="https://wa.me/523312345678" target="_blank">
+                        <a href="https://wa.me/523324619605?text=Hi%20Jesus%20I%20want%20to%20talk%20with%20you%20about%20a%20project" target="_blank">
                             <i class="fa-brands fa-whatsapp"></i> Whatsapp me
                         </a>
                     </div>
                     <div class="form-content">
                         <p class="small">Or through this form</p>
+                        <span id="error" class="error hidden"></span>
                         <div>
-                            
-                            <input type="text" id="name" name="name" placeholder="Jonh Smith" />
+                            <input required autocomplete="name" type="text" id="name" name="name" placeholder="Jonh Smith" />
                             <label for="name">Name</label>
                         </div>
                         <div>
-                            <input type="email" id="email" name="email" placeholder="example@email.com" />
+                            <input required autocomplete="email" type="email" id="email" name="email" placeholder="example@email.com" />
                             <label for="email">Email</label>
                         </div>
                         <div>
                             <textarea id="message" name="message" placeholder="Hi Jesús..."></textarea>
                             <label for="message">Message</label>
                         </div>
-                        <button type="submit">
-                            Start <span class="small"> the conversation</span>
+                        <button type="submit" id="send">
+                            <span id="status">Start</span><span class="small"> the conversation</span>
                         </button>
                     </div>
                 </form>
