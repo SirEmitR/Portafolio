@@ -116,21 +116,16 @@ details summary{
     color: var(--ligth);
     font-size: var(--small);
     transition: var(--transition-colors);
-    &::before{
-        content: "";
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        background-color: var(--purple);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--ligth);
-        font-size: var(--small);
-    }
 
     &::-webkit-details-marker{
         display: none;
+    }
+
+    img{
+        width: auto;
+        height: 16px;
+        object-fit: contain;
+    
     }
 }
 .pp{
@@ -271,10 +266,16 @@ details summary{
 }
 
 .logo{
-    width: 50px;
-    height: 50px;
-    aspect-ratio: 1/1;
-    background-color: var(--crystal);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: auto;
+        height: 20px;
+        object-fit: contain;
+    
+    }
 }
 
 
