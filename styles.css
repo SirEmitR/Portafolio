@@ -192,7 +192,7 @@ details summary{
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 100dvh;
     background-color: var(--dark);
     box-shadow: 0px 0px 5px #85858551;
     display: flex;
